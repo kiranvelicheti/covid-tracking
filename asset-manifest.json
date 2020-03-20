@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kiranvelicheti/covid-tracking/static/css/main.5f361e03.chunk.css",
+    "main.js": "/kiranvelicheti/covid-tracking/static/js/main.3c3d73c2.chunk.js",
+    "main.js.map": "/kiranvelicheti/covid-tracking/static/js/main.3c3d73c2.chunk.js.map",
+    "runtime-main.js": "/kiranvelicheti/covid-tracking/static/js/runtime-main.2c1633a5.js",
+    "runtime-main.js.map": "/kiranvelicheti/covid-tracking/static/js/runtime-main.2c1633a5.js.map",
+    "static/js/2.430decd7.chunk.js": "/kiranvelicheti/covid-tracking/static/js/2.430decd7.chunk.js",
+    "static/js/2.430decd7.chunk.js.map": "/kiranvelicheti/covid-tracking/static/js/2.430decd7.chunk.js.map",
+    "index.html": "/kiranvelicheti/covid-tracking/index.html",
+    "precache-manifest.3862ab6e87b30fb30f74830cac7481f5.js": "/kiranvelicheti/covid-tracking/precache-manifest.3862ab6e87b30fb30f74830cac7481f5.js",
+    "service-worker.js": "/kiranvelicheti/covid-tracking/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/kiranvelicheti/covid-tracking/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.430decd7.chunk.js.LICENSE.txt": "/kiranvelicheti/covid-tracking/static/js/2.430decd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c1633a5.js",
+    "static/js/2.430decd7.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.3c3d73c2.chunk.js"
+  ]
+}
