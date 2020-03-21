@@ -18,7 +18,7 @@ const getDailyStatus = () => {
 
 const useStyles = makeStyles({
     table: {
-        minWidth: 700,
+        minWidth: "100vh",
     },
     expandedPanel: {
         justifyContent: "center",
@@ -76,7 +76,7 @@ const TestStatus = () => {
                                     <TableHead>
                                         <StyledTableRow>
                                             {headers.map(header => {
-                                                return <StyledTableCell align="center" >header</StyledTableCell>
+                                                return <StyledTableCell align="center" >{header}</StyledTableCell>
                                             })}
                                         </StyledTableRow>
                                     </TableHead>

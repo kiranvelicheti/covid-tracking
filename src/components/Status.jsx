@@ -43,6 +43,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
+        width: "100vh"
     },
 }));
 
@@ -54,25 +55,27 @@ const Status = () => {
         setValue(newValue);
     };
 
-    return (<div>
-        <Typography variant="h4" style={{ justifyContent: "center" }}> COVID- 19 Tracking</Typography>
-        <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                <Tab label="By Date" {...a11yProps(0)} />
-                <Tab label="By State" {...a11yProps(1)} />
-            </Tabs>
-        </AppBar>
-        <TabPanel value={value} index={0}>
-            <Grid container>
-                <Grid><TestStatus></TestStatus></Grid>
+    return (<div className={classes.root}>
+        <Grid container>
+            <Grid item xs={24} sm={12}>
+                <Typography variant="h4" style={{ justifyContent: "center" }}>COVID-19 Tracking</Typography>
             </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-            <Grid container>
-                <Grid><Cummulative></Cummulative></Grid>
+            <Grid item xs={12} sm={6}>
+                <AppBar position="static" style={{ width: "110vh" }}>
+                    <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+                        <Tab label="By Date" {...a11yProps(0)} />
+                        <Tab label="By State" {...a11yProps(1)} />
+                    </Tabs>
+                </AppBar>
+                <TabPanel value={value} index={0}>
+                    <Grid><TestStatus></TestStatus></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={1}>
+                    <Grid ><Cummulative></Cummulative></Grid>
+                </TabPanel>
             </Grid>
-        </TabPanel>
-    </div>);
+        </Grid>
+    </div >);
 }
 
 export default Status
