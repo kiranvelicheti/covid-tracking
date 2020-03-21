@@ -1,0 +1,30 @@
+.sidenav {
+  height: 100vh;
+  width: 220px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: white;
+  background: grey;
+}
+
+.app-logo {
+  margin-bottom: 4em;
+}
+
+.sidenav-upper {
+  text-align: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 16px 0px 8px 16px;
+  display: block;
+  &.active {
+    background-color: white;
+    color: #525252;
+    font-weight: bold;
+  }
+}

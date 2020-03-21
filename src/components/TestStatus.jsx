@@ -27,7 +27,8 @@ const useStyles = makeStyles({
         minHeight: 56,
         "&$expanded": {
             minHeight: 56
-        }
+        },
+        square: true
     }
 });
 
