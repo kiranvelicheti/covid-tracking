@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import MainBody from "./components/MainBody";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import Status from "./components/Status";
 
 const theme = createMuiTheme({
   palette: {
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <MainBody />
+        <Status />
       </ThemeProvider>
     </div>
   );

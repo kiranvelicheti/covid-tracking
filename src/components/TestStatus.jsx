@@ -6,6 +6,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import { getStateFullName } from "../util/StateAbbrevation";
 import { ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails } from "@material-ui/core";
@@ -28,7 +29,6 @@ const useStyles = makeStyles({
         "&$expanded": {
             minHeight: 56
         },
-        square: true
     }
 });
 
@@ -54,9 +54,9 @@ const StyledTableRow = withStyles(theme => ({
 
 const TestStatus = () => {
     const classes = useStyles();
-
     const [statesMap, setStatesMap] = useState([]);
 
+    const headers = ["State", "Positive", "Positive", "Pending", "Death"]
     useEffect(() => {
         getDailyStatus().then(statesData => {
             setStatesMap(_.groupBy(statesData, "dateChecked"));
@@ -75,11 +75,9 @@ const TestStatus = () => {
                                 <Table className={classes.table} aria-label="customized table">
                                     <TableHead>
                                         <StyledTableRow>
-                                            <StyledTableCell align="center">State</StyledTableCell>
-                                            <StyledTableCell align="center">Positive</StyledTableCell>
-                                            <StyledTableCell align="center">Negative</StyledTableCell>
-                                            <StyledTableCell align="center">Pending</StyledTableCell>
-                                            <StyledTableCell align="center">Death</StyledTableCell>
+                                            {headers.map(header => {
+                                                return <StyledTableCell align="center" >header</StyledTableCell>
+                                            })}
                                         </StyledTableRow>
                                     </TableHead>
                                     <TableBody>
